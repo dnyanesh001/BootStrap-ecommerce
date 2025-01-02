@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+ <link rel="stylesheet" href="style.css">
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">E-shopper</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/#products">Cameras</a></li>
+                  <li><a class="dropdown-item" href="/#products">Apple Gadgets</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/#products">Drones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cart.html" tabindex="-1">
+                  Cart<i class="bi bi-cart-plus-fill"></i> 
+                  <span class="cart-badge badge bg-success">4</span></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-2 order-sm-last">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="myaccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Orders</a></li>
+                  <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex search-form">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+           
+          </div>
+        </div>
+      </nav>
+      <!-- End of Navigation -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images/product-2-slider.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/product-3-slider.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/product-6-slider.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <!-- End of Carousel -->
+    <div class="container mb-5">
+          <div id="products" class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                
+
+                  <div class="card product-item">
+                    <i class="bi bi-heart-fill position-absolute liked"></i>
+                    <i class="bi bi-heart position-absolute like"></i>
+                    <img src="images/product-1-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted  fw-light">Headphones</h6>
+                      <h5 class="card-title">Sony WX-5</h5>
+                      <p class="card-text price"> $100.75 <span class="float-end rating-stars" >
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </span> </p>
+                      <div class="text-center">
+                        <a class="btn btn-dark w-100" onclick="showToast()" role="button" > Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+                
+                <div class="card product-item" >
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                <i class="bi bi-heart position-absolute like"></i>
+                  <img src="images/product-2-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">SmartWatch</h6>
+                    <h5 class="card-title">Apple Watch 2</h5>
+                    <p class="card-text price"> $500.75 <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                   <i class="bi bi-heart position-absolute like"></i>
+                  <img src="images/product-4-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Camera</h6>
+                    <h5 class="card-title">Canon WM-5</h5>
+                    <p class="card-text price"> $300.75 <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                   <i class="bi bi-heart position-absolute like"></i>
+                  <img src="images/product-3-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Mobile</h6>
+                    <h5 class="card-title">Apple IPhone 11</h5>
+                    <p class="card-text price"> $799.75 <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+     
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="images/product-5-square.jpg"  onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Tablet</h6>
+                    <h5 class="card-title">iPad Pro</h5>
+                    <p class="card-text price"> $999.75 <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+
+                <div class="card product-item">
+                  <i class="bi bi-heart-fill position-absolute liked"></i>
+                  <i class="bi bi-heart position-absolute like"></i>
+                  <img src="images/product-6-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Drones</h6>
+                    <h5 class="card-title">XT-5</h5>
+                    <p class="card-text price"> $1100.75 <span class="float-end rating-stars" >
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </span> </p>
+                    <div class="text-center">
+                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+             
+            
+          </div>
+    </div>
+    <div class="footer mt-auto bg-dark text-light">
+        <div class="container py-3">
+            <div class="row d-flex footer-items">
+                <div class="col-lg-4">
+                    <h5>Categories</h5>
+                    <ul>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">Mobiles</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Drones</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                   <h5>Useful Links</h5>
+                   <ul>
+                       <li><a href="#">Terms</a></li>
+                       <li><a href="#">Privacy</a></li>
+                       <li><a href="#">About us</a></li>
+                       <li><a href="#">Mission</a></li>
+                   </ul>
+               </div>
+               <div class="col-lg-4">
+                   <h5>Get Updates</h5>
+                   <div class="d-flex subscribe">
+                       <input type="text" class="form-control">
+                       <button class="btn btn-warning">Subscribe</button>
+                   </div>
+                   <div class="mt-2">
+                    <div class="btn-group me-2 social-icons" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-secondary mx-1 d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-facebook"></i>
+                      </button>
+                      <button type="button" class="btn btn-secondary mx-1 d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-instagram"></i>
+                      </button>                      
+                      <button type="button" class="btn btn-secondary mx-1 d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-twitter"></i>
+                      </button>                      
+                      <button type="button" class="btn btn-secondary mx-1 d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-linkedin"></i>
+                      </button>                   
+                     </div>
+                   </div>
+               </div>
+           </div>
+           <div class="row text-center">
+             <span>@coderdost</span>
+           </div>
+        </div>
+     
+    </div>
+    <!-- End of Footer -->
+    <div class="toast d-flex align-items-center text-white bg-primary border-0 position-fixed" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        Item is successfully added to your cart.
+      </div>
+      <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <!-- End of Toast -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You will need to Login of Check your account.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a type="button" href="login.html" class="btn btn-primary">Go To Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+    <script src="app.js"></script>
+    
+</body>
+</html>
